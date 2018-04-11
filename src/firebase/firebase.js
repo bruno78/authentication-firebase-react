@@ -6,13 +6,14 @@
 
 import * as firebase from 'firebase';
 
+
 const config = {
-    apiKey: "AIzaSyAzbISDb7EJ7cg2-yGohDV6CgBw1PYl1t8",
-    authDomain: "authentication-proj-3.firebaseapp.com",
-    databaseURL: "https://authentication-proj-3.firebaseio.com",
-    projectId: "authentication-proj-3",
-    storageBucket: "authentication-proj-3.appspot.com",
-    messagingSenderId: "218309514009"
+    apiKey: process.env.REACT_APP_API_KEY,
+    authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+    databaseURL: process.env.REACT_APP_DATABASE_URL,
+    projectId: process.env.REACT_APP_PROJECT_ID,
+    storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+    messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
 };
 
 // If firebase hasn't initialized yet, initialize it with config.
