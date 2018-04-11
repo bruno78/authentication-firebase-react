@@ -2,8 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 import * as routes from '../constants/routes';
-import SignOut from './SignOut';
-import SignIn from './SignIn';
+import SignOutButton from './SignOut';
 
 const Navigation = ({ authUser }) =>
   <div>
@@ -19,7 +18,7 @@ const NavigationAuth = () =>
       <li><Link to={routes.LANDING}>Landing</Link></li>
       <li><Link to={routes.HOME}>Home</Link></li>
       <li><Link to={routes.ACCOUNT}>Account</Link></li>
-      <li><SignOut /></li>
+      <li><SignOutButton /></li>
     </ul>
   </div>
 
