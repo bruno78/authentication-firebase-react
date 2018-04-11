@@ -57,7 +57,7 @@ class SignUpForm extends Component {
                 this.setState(() => ({ ...INITIAL_STATE }));
                 history.push(routes.HOME);
 
-                // TODO: Insert POST for user in database here
+                // TODO: Insert POST for user in Spring Boot database here
             })
             .catch(error => {
                 this.setState(byPropKey('error', error));
